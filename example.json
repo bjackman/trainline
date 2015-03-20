@@ -1,0 +1,56 @@
+[
+{
+          "@context": "http://schema.org",
+          "@type": "TrainReservation",
+          "reservationNumber" : "2141684966",
+          "reservationStatus": "http://schema.org/ReservationConfirmed",
+          "underName":{
+            "@type": "Person",
+            "name": "Brendan",
+         "email": "BHENRYJ0117@GMAIL.COM"
+           },
+          "reservationFor": {
+            "@type": "TrainTrip",
+            "name": "Manchester Piccadilly to London Euston",
+          "departureStation": {
+             "@type": "TrainStation",
+             "name": "Manchester Piccadilly",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Manchester"
+            }
+          },
+          "departureTime":"2015-03-21T14:35:00+00:00",
+          "arrivalStation":   {
+             "@type": "TrainStation",
+             "name": "London Euston",
+          "address": {
+             "@type": "PostalAddress",
+             "addressLocality":"London"
+         }
+          },
+          "arrivalTime":"2015-03-21T16:43:00+00:00",
+          "trainCompany":"Train  (VIRGIN TRAINS)"
+          },
+          "reservedTicket":   {
+             "@type": "Ticket",
+             "printUrl": "http://www.thetrainline.com/train-tickets/mobile-app/",
+             "downloadUrl": "http://www.thetrainline.com/buytickets/myaccounthomepage.aspx",
+             "additionalTicketText" :"16-25 RAILCARD You will need to show your railcard(s) at some point during your journey.",
+            "underName": {
+            "@type": "Person",
+            "name": "Brendan"
+            },
+          
+          "ticketedSeat": {
+            "@type": "Seat",
+            "seatNumber": "38",
+            "seatSection": "D",
+            "seatingType": "ADVANCE SINGLE"
+            }
+          },
+          "cancelReservationUrl": "http://www.thetrainline.com/buytickets/myaccounthomepage.aspx",
+          "modifyReservationUrl": "http://www.thetrainline.com/buytickets/myaccounthomepage.aspx",
+          "image": "http://content.announcements.uk.com/TTLEMAIL/New_brand_images/ttllogo_strap_180x70.gif"
+}
+]       

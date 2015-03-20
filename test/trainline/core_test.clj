@@ -2,6 +2,7 @@
   (:require [clojure.test :refer :all]
             [trainline.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest parse-test
+  (let [json (slurp "example.json")]
+    (testing "Can parse JSON"
+      (is (= (:reservationNumber (parse-reservation json)) "2141684966")))))
