@@ -1,8 +1,9 @@
 (ns trainline.core
+  (:require [cheshire.core])
   (:gen-class))
 
 (defn parse-reservation [json]
-  {:reservationNumber "NOTHING"})
+  (first (cheshire.core/parse-string json true)))
 
 (defn -main
   "I don't do a whole lot ... yet."
